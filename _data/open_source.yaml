@@ -1,0 +1,15 @@
+- name: "TACHIOM"
+  description: "TACHIOM is a fast and scalable data structure for late-interaction multi-vector retrieval, written in Rust with Python bindings. It allows to cluster hundreds of millions of vectors in few minutes on CPU and to retrieve from large multivector collections in under 10 ms on a single core."
+  url: "https://github.com/TusKANNy/tachiom"
+
+- name: "kANNolo"
+  description: "A flexible Rust library combining state-of-the-art indexing techniques for both dense, sparse, and multivector embeddings. Designed to make prototyping new ANN algorithms fast and ergonomic."
+  url: "https://github.com/TusKANNy/kannolo"
+
+- name: "Vectorium"
+  description: "A Rust library for storing, accessing, and compressing dense, sparse, and multi-vector embedding datasets. Provides a unified dataset/encoder interface shared across TusKANNy's indexing and search crates. Includes an exhaustive search API and a CLI tool for ground-truth computation."
+  url: "https://github.com/TusKANNy/vectorium"
+
+- name: "Awesome Multivector Retrieval"
+  description: "A curated list of papers, code, models, and datasets for late-interaction multivector retrieval - covering ColBERT-style models, indexing techniques, software libraries, and benchmarks."
+  url: "https://github.com/TusKANNy/awesome-multivector-retrieval"

@@ -20,23 +20,32 @@
 #   selected: true
 
 # --- Conference paper ---
+- title: "Efficient Multivector Retrieval with Token-Aware Clustering and Hierarchical Indexing"
+  authors: "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
+  venue: "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)"
+  year: 2026
+  pdf: "https://arxiv.org/abs/2604.28142"
+  code: "https://github.com/TusKANNy/tachiom"
+  selected: true
+
 - title: "Multivector Reranking in the Era of Strong First-Stage Retrievers"
   authors: "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
   venue: "European Conference on Information Retrieval (ECIR)"
   year: 2026
   pdf: "https://arxiv.org/abs/2601.05200"
+  doi: "10.1007/978-3-032-21324-2_4"
   code: "https://github.com/TusKANNy/papers_reproducibility/tree/main/ecir2026"
   selected: true
 
 - title: "Efficient Approximate Nearest Neighbor Search on a Raspberry Pi"
   authors: "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
-  venue: "International ACM SIGIR Conference on Research and Development in Information Retrieval"
+  venue: "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)"
   year: 2025
   doi: "10.1145/3726302.3730268"
   code: "https://github.com/TusKANNy/ann_low_resource"
   selected: true
 
-- title: "kANNolo: Sweet and Smooth Approximate k-Nearest Neighbors Search."
+- title: "kANNolo: Sweet and Smooth Approximate k-Nearest Neighbors Search"
   authors: "Leonardo Delfino, Domenico Erriquez, Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
   venue: "European Conference on Information Retrieval (ECIR)"
   year: 2025

@@ -5,7 +5,7 @@ education:
     location: "Pisa, Italy"
     period: "2023 - ongoing"
     description: >
-      Researching Information Retrieval with a focus on efficiency and Approximate Nearest Neighbors (ANN) Search.
+      Conducting research at the intersection of theory and systems, specializing in Information Retrieval and Approximate Nearest Neighbor (ANN) Search with a focus on high-performance, large-scale vector retrieval.
 
   - title: "MSc in Computer Science"
     institution: "University of Pisa"
@@ -25,13 +25,21 @@ education:
     thesis: "https://drive.google.com/file/d/1dQqOjyA4QAJGRgEk5PIQ_rYHX21DRhra/view"
 
 work:
+  - title: "Founding Member & Core Maintainer"
+    institution: "tusKANNy"
+    institution_url: "https://tuskanny.com"
+    location: "Pisa, Italy"
+    period: "March 2024 – Present"
+    description: >
+      Conducting applied research to architect and maintain high-performance, open-source Rust infrastructure for vector search. Serving as a lead developer for retrieval libraries within the group, managing the end-to-end lifecycle from designing algorithms and data structures to translating them into production-ready code, optimizing repository infrastructure and technical documentation.
+
   - title: "Research Associate"
     institution: "ISTI-CNR"
     institution_url: "https://www.isti.cnr.it/"
     location: "Pisa, Italy"
     period: "2023 - ongoing"
     description: >
-      I carry out part of my research as a PhD student at the HPC Lab of ISTI-CNR.
+      Conduct research on Information Retrieval and Approximate Nearest Neighbor search at the HPC Lab, designing and engineering high-performance systems for large-scale vector retrieval.
 
   - title: "Visiting Researcher"
     institution: "University of Tokyo"
