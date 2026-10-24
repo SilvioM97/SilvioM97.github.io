@@ -4,50 +4,55 @@
 {% endif %}
 
 {% if items.size > 0 %}
-<section id="publications" class="mt-10">
-  <h2 class="text-xl font-semibold mb-4">Publications</h2>
+<section id="publications" class="mt-8">
+  <h1 class="text-2xl font-bold mb-2">Research</h1>
+  <p class="text-slate-600 mb-6">My papers, each with a short tl;dr. Refer to 
+    <a class="underline hover:no-underline text-sky-700" href="{{ site.data.author.scholar }}" target="_blank" rel="noopener">Google Scholar</a> for further information.</p>
   <ol class="bg-slate-50 list-decimal pl-6 space-y-4">
     {% for p in items %}
     <li class=" rounded-xl p-4">
       <div class="font-semibold">{{ p.title }}</div>
-      <div class="text-slate-600 text-sm">{{ p.authors }}</div>
+      <div class="text-slate-600 text-sm">{{ p.authors | replace: site.data.author.name, "<strong class='text-slate-800'>Silvio Martinico</strong>" }}</div>
       <div class="text-slate-600 text-sm">
         <em>{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}</em>
       </div>
+      {% if p.tldr %}
+      <p class="text-slate-700 text-sm mt-2"><span class="font-medium">tl;dr</span> {{ p.tldr }}</p>
+      {% endif %}
       <div class="flex flex-wrap gap-2 mt-3">
         {% if p.pdf %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm hover:bg-sky-700"
+        <a class="btn"
           href="{{ p.pdf }}" target="_blank" rel="noopener">
           <i class="bi bi-file-earmark-pdf-fill" aria-hidden="true"></i><span>PDF</span>
         </a>
         {% endif %}
         {% if p.doi %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-600 text-white text-sm hover:bg-emerald-700"
+        <a class="btn"
           href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">
           <i class="ai ai-doi"></i>
           <span>DOI</span>
         </a>
         {% endif %}
         {% if p.code %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 text-white text-sm hover:bg-black"
+        <a class="btn"
           href="{{ p.code }}" target="_blank" rel="noopener">
           <i class="bi bi-github" aria-hidden="true"></i><span>Code</span>
         </a>
         {% endif %}
         {% if p.poster %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-fuchsia-600 text-white text-sm hover:bg-fuchsia-700"
+        <a class="btn"
           href="{{ p.poster }}" target="_blank" rel="noopener">
           <i class="bi bi-image" aria-hidden="true"></i><span>Poster</span>
         </a>
         {% endif %}
         {% if p.slides %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-orange-600 text-white text-sm hover:bg-orange-700"
+        <a class="btn"
           href="{{ p.slides }}" target="_blank" rel="noopener">
           <i class="bi bi-easel-fill" aria-hidden="true"></i><span>Slides</span>
         </a>
         {% endif %}
         {% if p.video %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-rose-600 text-white text-sm hover:bg-rose-700"
+        <a class="btn"
           href="{{ p.video }}" target="_blank" rel="noopener">
           <i class="bi bi-play-circle-fill" aria-hidden="true"></i><span>Video</span>
         </a>

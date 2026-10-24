@@ -3,21 +3,25 @@
 {% if projects.size > 0 %}
 <section id="open-source" class="mt-10">
   <h2 class="text-xl font-semibold mb-4">Open Source Projects</h2>
-  <ol class="bg-slate-50 list-decimal pl-6 space-y-4">
+  <div class="grid gap-4 md:grid-cols-2">
     {% for project in projects %}
-    <li class="rounded-xl p-4">
-      <div class="font-semibold">{{ project.name }}</div>
-      <div class="text-slate-700 text-sm mt-1">{{ project.description }}</div>
-      <div class="flex flex-wrap gap-2 mt-3">
-        {% if project.url %}
-        <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 text-white text-sm hover:bg-black"
-          href="{{ project.url }}" target="_blank" rel="noopener">
-          <i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span>
-        </a>
+    <div class="bg-slate-50 rounded-2xl p-4 flex flex-col">
+      <div class="h-20 flex items-center">
+        {% if project.logo %}
+        <img class="max-h-full max-w-[12rem] object-contain" src="{{ project.logo | relative_url }}" alt="{{ project.name }} logo" loading="lazy">
         {% endif %}
       </div>
-    </li>
+      <div class="font-semibold mt-3">{{ project.name }}</div>
+      <div class="text-slate-700 text-sm mt-1">{{ project.description }}</div>
+      {% if project.url %}
+      <div class="flex flex-wrap gap-2 mt-auto pt-3">
+        <a class="btn" href="{{ project.url }}" target="_blank" rel="noopener">
+          <i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span>
+        </a>
+      </div>
+      {% endif %}
+    </div>
     {% endfor %}
-  </ol>
+  </div>
 </section>
 {% endif %}

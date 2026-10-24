@@ -6,6 +6,8 @@ education:
     period: "November 2023 – April 2027"
     description: >
       Research on efficient algorithms and data structures for Information Retrieval and Approximate Nearest Neighbor (ANN) search, carried out at the ISTI-CNR HPC Lab. Focus on late-interaction / multi-vector retrieval, compression, and index design. Published at SIGIR, ECIR, and CIKM.
+    thesis_title: "Advancements in Approximate Nearest Neighbors Search: Algorithmic Approaches for Efficient Indexing and Retrieval"
+    supervisors: "Franco Maria Nardini, Cosimo Rulli, Rossano Venturini"
 
   - title: "MSc in Computer Science"
     institution: "University of Pisa"
@@ -13,7 +15,9 @@ education:
     location: "Pisa, Italy"
     period: "October 6, 2023"
     description: >
-      Graduated 110/110 with honours. Thesis on Graph-based Indexing for Efficient and Effective Approximate Nearest Neighbors Search.
+      Graduated 110/110 with honours.
+    thesis_title: "Graph-based Indexing for Efficient and Effective Approximate Nearest Neighbors Search"
+    supervisors: "Franco Maria Nardini, Cosimo Rulli, Rossano Venturini"
 
   - title: "BSc in Mathematics"
     institution: "University of Pisa"
@@ -22,6 +26,8 @@ education:
     period: "May 14, 2021"
     description: >
       Thesis on the decidability of the word problem for the free exponential ring and field.
+    thesis_title: "The Free Exponential Ring and the Free Exponential Field"
+    supervisors: "Marcello Mamino"
     thesis: "https://drive.google.com/file/d/1dQqOjyA4QAJGRgEk5PIQ_rYHX21DRhra/view"
 
 work:
@@ -52,6 +58,8 @@ work:
     institution_url: "https://www.u-tokyo.ac.jp/ja/index.html"
     location: "Tokyo, Japan"
     period: "02/2025 - 03/2025"
+    description: >
+      Research on oblivious data structures applied to Nearest Neighbors search.
 
   - title: "Teaching Assistant"
     institution: "University of Pisa"
@@ -60,3 +68,40 @@ work:
     period: "03/2024 - 06/2024"
     description: >
       Tutor for the Algorithms and Data Structures course within the M.Sc. program in Data Science.
+
+  - title: "Research Fellow"
+    institution: "ISTI-CNR"
+    institution_url: "https://www.isti.cnr.it/"
+    location: "Pisa, Italy"
+    period: "02/2023 - 08/2023"
+    description: >
+      Developed efficient and scalable vector search algorithms.
+
+talks:
+  - title: "Multi-vector Reranking in the Era of Strong First-Stage Retrievers"
+    venue: "University of Glasgow, Glasgow, Scotland"
+    date: "April 2026"
+  - title: "Efficient Approximate Nearest Neighbor Search on a Raspberry Pi"
+    venue: "ReNeuIR'25, Workshop on Reaching Efficiency in Neural Information Retrieval, Padua, Italy"
+    date: "July 2025"
+  - title: "Advancements in Approximate Nearest Neighbors Search: Algorithmic Approaches for Efficient Indexing and Retrieval"
+    venue: "RIKEN Center for Advanced Intelligence Project (AIP), Tokyo, Japan"
+    date: "March 2025"
+
+awards:
+  - title: "Winner of the SISAP 2026 Indexing Challenge"
+    detail: "Task 3 (Learned Sparse Retrieval)"
+    date: "2026"
+  - title: "Selected Participant, 6th ACM Europe Summer School on Data Science"
+    detail: "Ioannina, Greece"
+    date: "2025"
+  - title: "PhD Scholarship"
+    detail: "Computer Science, University of Pisa"
+    date: "2023"
+  - title: "Research Grant"
+    detail: "ISTI-CNR, Pisa, Italy"
+    date: "2023"
+
+service:
+  - "Program Committee member: ECIR 2026–2027, PeRConAI 2026, ReNeuIR 2026"
+  - "Reviewer: TOIS, SISAP 2026, CIKM 2026, WWW 2026, SIGIR 2024–2026, ECIR 2025, WSDM 2024"

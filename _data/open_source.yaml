@@ -1,4 +1,5 @@
 - name: "TACHIOM"
+  logo: "assets/img/logos/tachiom.webp"
   description: >
     A state-of-the-art multivector retrieval system based on Token-Aware Clustering (TAC), hierarchical indexing,
     and late-interaction-optimized Product Quantization, written in Rust with Python bindings. It retrieves over
@@ -7,24 +8,24 @@
   url: "https://github.com/TusKANNy/tachiom"
 
 - name: "kANNolo"
+  logo: "assets/img/logos/kannolo.webp"
   description: >
     A flexible Rust library combining state-of-the-art indexing techniques for both dense and sparse embeddings.
-    Designed to make prototyping new ANN algorithms fast and ergonomic. Delivers 2x+ faster retrieval than FAISS at
-    equal accuracy and is integrated into
+    Designed to make prototyping new ANN algorithms fast and ergonomic. Delivers 3×+ faster retrieval than hnswlib at
+    equal accuracy and lower memory usage, and is integrated into
     <a class="underline hover:no-underline text-sky-700" href="https://github.com/terrier-org/pyterrier" target="_blank" rel="noopener">PyTerrier</a>.
   url: "https://github.com/TusKANNy/kannolo"
 
 - name: "Vectorium"
+  logo: "assets/img/logos/vectorium.webp"
   description: >
     A Rust library for storing, accessing, and compressing dense, sparse, and multi-vector embedding datasets.
-    Provides a unified dataset/encoder interface shared across tusKANNy's indexing and search crates. Includes an
-    exhaustive search API and a CLI tool for ground-truth computation.
+    Provides a unified dataset/encoder interface shared across all tusKANNy's indexing and search crates (kANNolo, TACHIOM and Seismic).
   url: "https://github.com/TusKANNy/vectorium"
 
 - name: "Awesome Multivector Retrieval"
+  logo: "assets/img/logos/awesome-multivector-retrieval.svg"
   description: >
     The reference collection of papers, code, models, and datasets for the late-interaction multivector retrieval
-    community, covering ColBERT-style models, indexing techniques, software libraries, and benchmarks. Featured in
-    the <a class="underline hover:no-underline text-sky-700" href="https://github.com/terrier-org/pyterrier" target="_blank" rel="noopener">PyTerrier</a>
-    tutorial at SIGIR 2026.
+    community, covering ColBERT-style models, indexing techniques, software libraries, and benchmarks. 
   url: "https://github.com/TusKANNy/awesome-multivector-retrieval"

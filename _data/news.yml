@@ -1,0 +1,15 @@
+# Newest first. Only the first 5 entries are shown on the home page,
+# so older ones can simply be deleted.
+# Fields: date (YYYY-MM-DD), text (HTML allowed), link (optional)
+
+- date: 2026-10-01
+  text: "Won the SISAP 2026 Indexing Challenge (Task 3, Learned Sparse Retrieval), presented our paper and attended the conference."
+  link: "https://sisap-challenges.github.io/sisap26-leaderboard/"
+
+- date: 2026-08-01
+  text: "Started as a Research Engineer in the Applied Research team at Weaviate."
+  link: "https://weaviate.io/"
+
+- date: 2026-07-01
+  text: "Presented TACHIOM at SIGIR 2026 in Melbourne and at the ReNeurIR workshop, and attended the conference."
+  link: "https://arxiv.org/abs/2604.28142"

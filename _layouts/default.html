@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{{ page.title | default: site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,11 +20,12 @@
   <nav id="site-nav" class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <ul class="flex gap-6 py-3 text-sm">
-        <li><a href="#about"       class="nav-link text-slate-500 hover:text-slate-900 transition-colors">About</a></li>
-        <li><a href="#open-source" class="nav-link text-slate-500 hover:text-slate-900 transition-colors">Projects</a></li>
-        <li><a href="#publications" class="nav-link text-slate-500 hover:text-slate-900 transition-colors">Publications</a></li>
-        <li><a href="#experience"  class="nav-link text-slate-500 hover:text-slate-900 transition-colors">Experience</a></li>
-        <li><a href="#out-of-office" class="nav-link text-slate-500 hover:text-slate-900 transition-colors">Out of Office</a></li>
+        {% assign nav = "Home:/,Research:/research/,CV:/cv/" | split: "," %}
+        {% for item in nav %}
+        {% assign parts = item | split: ":" %}
+        <li><a href="{{ parts[1] | relative_url }}"
+            class="{% if page.url == parts[1] %}text-slate-900 font-medium{% else %}text-slate-500{% endif %} hover:text-slate-900 transition-colors">{{ parts[0] }}</a></li>
+        {% endfor %}
       </ul>
     </div>
   </nav>
@@ -32,27 +33,8 @@
     {{ content }}
   </main>
   <footer class="border-t border-slate-200 py-6 mt-auto">
-    <p class="text-center text-sm text-slate-500">&copy; {{ site.time | date: '%Y' }} Silvio</p>
+    <p class="text-center text-sm text-slate-500">&copy; {{ site.time | date: '%Y' }} {{ site.data.author.name }} · Last updated {{ site.time | date: '%B %-d, %Y' }}</p>
   </footer>
-  <script>
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('section[id]');
-
-    const setActive = (id) => {
-      navLinks.forEach(link => {
-        const active = link.getAttribute('href') === '#' + id;
-        link.classList.toggle('text-slate-900', active);
-        link.classList.toggle('font-medium', active);
-        link.classList.toggle('text-slate-500', !active);
-      });
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => { if (entry.isIntersecting) setActive(entry.target.id); });
-    }, { rootMargin: '-20% 0px -70% 0px' });
-
-    sections.forEach(s => observer.observe(s));
-  </script>
 </body>
 
 </html>

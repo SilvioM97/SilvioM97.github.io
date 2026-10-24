@@ -24,6 +24,17 @@
   authors: "Silvio Martinico, Francesco Benocci, Leonard Dahlmann, Francesco Gargiulo, Tobias Heuer, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
   venue: "ACM International Conference on Information and Knowledge Management (CIKM)"
   year: 2026
+  tldr: >
+    Losslessly compresses HNSW neighbor lists: node reordering makes them gap-encodable, and SIMD Stream VByte decodes them on the fly. Up to 52.7% less edge storage with no latency overhead, and 44.3% smaller graphs in production at eBay.
+  selected: true
+
+- title: "Two Indexes, One Foundation: kANNolo and Seismic for Efficient Learned Sparse Retrieval"
+  authors: "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
+  venue: "International Conference on Similarity Search and Applications (SISAP)"
+  year: 2026
+  doi: "10.1007/978-3-032-42224-8_36"
+  tldr: >
+    Our two entries to Task 3 (Learned Sparse Retrieval) of the SISAP 2026 Indexing Challenge, which placed first and second: a two-stage HNSW graph over pruned vectors built with kANNolo, and a Seismic-Wave inverted index + kNN graph, both on top of Vectorium.
   selected: true
 
 - title: "Efficient Multivector Retrieval with Token-Aware Clustering and Hierarchical Indexing"
@@ -33,6 +44,8 @@
   pdf: "https://arxiv.org/abs/2604.28142"
   doi: "10.1145/3805712.3809927"
   code: "https://github.com/TusKANNy/tachiom"
+  tldr: >
+    Introduces TACHIOM, a multivector retrieval system built on Token-Aware Clustering, hierarchical indexing and MaxSim-optimized Product Quantization. Clustering is up to 247x faster than k-means, and retrieval up to 9.8x faster than state-of-the-art systems.
   selected: true
 
 - title: "Multivector Reranking in the Era of Strong First-Stage Retrievers"
@@ -42,6 +55,8 @@
   pdf: "https://arxiv.org/abs/2601.05200"
   doi: "10.1007/978-3-032-21324-2_4"
   code: "https://github.com/TusKANNy/papers_reproducibility/tree/main/ecir2026"
+  tldr: >
+    Replacing the token-level gathering phase of multivector retrieval with a learned sparse first stage gives a 24x+ speedup over state-of-the-art multivector systems.
   selected: true
 
 - title: "Efficient Approximate Nearest Neighbor Search on a Raspberry Pi"
@@ -51,6 +66,8 @@
   pdf: "https://dl.acm.org/doi/pdf/10.1145/3726302.3730268"
   doi: "10.1145/3726302.3730268"
   code: "https://github.com/TusKANNy/ann_low_resource"
+  tldr: >
+    How far can ANN search go on a device two to three orders of magnitude cheaper than a server? Experiments with two state-of-the-art libraries on dense and sparse data, and the challenges they reveal for low-resource settings.
   selected: true
 
 - title: "kANNolo: Sweet and Smooth Approximate k-Nearest Neighbors Search"
@@ -60,6 +77,8 @@
   pdf: "https://arxiv.org/pdf/2501.06121"
   doi: "10.1007/978-3-031-88717-8_29"
   code: "https://github.com/TusKANNy/kannolo"
+  tldr: >
+    A Rust ANN research library that combines state-of-the-art indexing for dense and sparse vectors with vector quantization, designed for fast prototyping of new algorithms.
   selected: true
 
 # --- Workshop / demo ---

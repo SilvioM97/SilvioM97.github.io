@@ -34,10 +34,16 @@
                     {% if exp.description %}
                     <div class="mt-1 text-slate-700 text-sm">{{ exp.description }}</div>
                     {% endif %}
+                    {% if exp.thesis_title %}
+                    <div class="mt-1 text-slate-700 text-sm">Thesis: <em>{{ exp.thesis_title }}</em></div>
+                    {% endif %}
+                    {% if exp.supervisors %}
+                    <div class="text-slate-600 text-sm">Supervisor{% if exp.supervisors contains "," %}s{% endif %}: {{ exp.supervisors }}</div>
+                    {% endif %}
                     {% if exp.thesis %}
                     <div class="mt-2">
                         <a href="{{ exp.thesis }}" target="_blank" rel="noopener"
-                            class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm hover:bg-sky-700">
+                            class="btn">
                             <i class="bi bi-journal-text" aria-hidden="true"></i>
                             <span>Thesis</span>
                         </a>

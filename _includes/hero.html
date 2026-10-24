@@ -17,44 +17,38 @@
             </div>
 
             <div class="flex flex-wrap gap-2 mt-3">
-                {% if site.data.author.website %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 text-white text-sm hover:bg-black"
-                    href="{{ site.data.author.website }}" target="_blank" rel="noopener">
-                    <i class="bi bi-globe2" aria-hidden="true"></i><span>Website</span>
-                </a>
-                {% endif %}
                 {% if site.data.author.email %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-sm hover:bg-sky-700"
+                <a class="btn"
                     href="mailto:{{ site.data.author.email }}">
                     <i class="bi bi-envelope-fill" aria-hidden="true"></i><span>Email</span>
                 </a>
                 {% endif %}
                 {% if site.data.author.scholar %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-600 text-white text-sm hover:bg-emerald-700"
+                <a class="btn"
                     href="{{ site.data.author.scholar }}" target="_blank" rel="noopener">
                     <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i><span>Scholar</span>
                 </a>
                 {% endif %}
                 {% if site.data.author.orcid %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-green-700 text-white text-sm hover:bg-green-800"
+                <a class="btn"
                     href="{{ site.data.author.orcid }}" target="_blank" rel="noopener me">
                     <i class="ai ai-orcid ai-lg" aria-hidden="true"></i><span>ORCID</span>
                 </a>
                 {% endif %}
                 {% if site.data.author.github %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800 text-white text-sm hover:bg-black"
+                <a class="btn"
                     href="{{ site.data.author.github }}" target="_blank" rel="noopener">
                     <i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span>
                 </a>
                 {% endif %}
                 {% if site.data.author.linkedin %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-700 text-white text-sm hover:bg-sky-800"
+                <a class="btn"
                     href="{{ site.data.author.linkedin }}" target="_blank" rel="noopener">
                     <i class="bi bi-linkedin" aria-hidden="true"></i><span>LinkedIn</span>
                 </a>
                 {% endif %}
                 {% if site.data.author.twitter %}
-                <a class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-700 text-white text-sm hover:bg-slate-800"
+                <a class="btn"
                     href="{{ site.data.author.twitter }}" target="_blank" rel="noopener">
                     <i class="bi bi-twitter-x" aria-hidden="true"></i><span>X</span>
                 </a>

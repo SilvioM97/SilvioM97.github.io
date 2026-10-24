@@ -1,0 +1,21 @@
+{% assign news = site.data.news | default: [] %}
+
+{% if news.size > 0 %}
+<section id="news" class="mt-10">
+  <h2 class="text-xl font-semibold mb-4">News</h2>
+  <ul class="bg-slate-50 rounded-2xl p-4 space-y-3">
+    {% for n in news limit: 5 %}
+    <li class="flex gap-4">
+      <span class="shrink-0 w-20 text-sm text-slate-500 tabular-nums">{{ n.date | date: '%b %Y' }}</span>
+      <span class="text-slate-700">
+        {{ n.text }}
+        {% if n.link %}<a class="text-sky-700 hover:text-sky-900" href="{{ n.link }}" target="_blank" rel="noopener" aria-label="Link"><i class="bi bi-arrow-up-right-square"></i></a>{% endif %}
+      </span>
+    </li>
+    {% endfor %}
+    <li class="flex gap-4 text-slate-400" aria-hidden="true">
+      <span class="shrink-0 w-20 text-center leading-none">&#8942;</span>
+    </li>
+  </ul>
+</section>
+{% endif %}

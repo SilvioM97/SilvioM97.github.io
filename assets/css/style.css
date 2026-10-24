@@ -1,2 +1,12 @@
 /* optional: small tweaks on top of Tailwind */
 .prose a { text-decoration: underline; }
+
+/* one style for every link button */
+.btn {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .375rem .75rem; border-radius: .5rem;
+  font-size: .875rem; line-height: 1.25rem;
+  background: #fff; color: #334155; border: 1px solid #cbd5e1;
+  transition: background-color .15s, border-color .15s;
+}
+.btn:hover { background: #f1f5f9; border-color: #94a3b8; color: #0f172a; }
