@@ -78,6 +78,9 @@ work:
       Developed efficient and scalable vector search algorithms.
 
 talks:
+  - title: "Efficient Multivector Retrieval with Token-Aware Clustering and Hierarchical Indexing"
+    venue: "ReNeuIR'26, Workshop on Reaching Efficiency in Neural Information Retrieval, Melbourne, Australia"
+    date: "July 2026"
   - title: "Multi-vector Reranking in the Era of Strong First-Stage Retrievers"
     venue: "University of Glasgow, Glasgow, Scotland"
     date: "April 2026"
