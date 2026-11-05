@@ -19,6 +19,18 @@
 #   code: "https://github.com/yourname/neural-symbolic"
 #   selected: true
 
+- title: "Modular and Efficient Approximate Nearest Neighbors Search with Vectorium and kANNolo"
+  authors: "Silvio Martinico, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
+  venue: "Information Systems (Elsevier), under review"
+  year: 2026
+  pdf: "https://arxiv.org/abs/2611.03927"
+  tldr: >
+    Vectorium and kANNolo, two Rust libraries that split ANN search into a data layer (vectors, distances, 11 encoders
+    from float32 to sub-bit codes) and an indexing layer (HNSW, IVF and two-stage indexes) generic over dense, sparse and
+    multi-vector data, with no run-time cost for the modularity. They give the best memory–throughput trade-off on dense data in 9 of
+    12 settings, and the systems built on Vectorium lead on all sparse collections.
+  selected: true
+
 # --- Conference paper ---
 - title: "Lossless Compression of Proximity Graph Indexes for Efficient Approximate Nearest Neighbors Search"
   authors: "Silvio Martinico, Francesco Benocci, Leonard Dahlmann, Francesco Gargiulo, Tobias Heuer, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
