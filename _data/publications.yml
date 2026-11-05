@@ -36,6 +36,7 @@
   authors: "Silvio Martinico, Francesco Benocci, Leonard Dahlmann, Francesco Gargiulo, Tobias Heuer, Franco Maria Nardini, Cosimo Rulli, and Rossano Venturini"
   venue: "ACM International Conference on Information and Knowledge Management (CIKM)"
   year: 2026
+  pdf: "https://arxiv.org/abs/2610.37176"
   tldr: >
     Losslessly compresses HNSW neighbor lists: node reordering makes them gap-encodable, and SIMD Stream VByte decodes them on the fly. Up to 52.7% less edge storage with no latency overhead, and 44.3% smaller graphs in production at eBay.
   selected: true
